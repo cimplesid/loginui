@@ -5,7 +5,7 @@ class Secondpage extends StatelessWidget {
   Widget _buildPageContent(BuildContext context) {
     return Container(
       padding: EdgeInsets.all(20.0),
-      color: Colors.grey.shade800,
+      color: Colors.blue.shade800,
       child: ListView(
         children: <Widget>[
           Column(
@@ -25,7 +25,7 @@ class Secondpage extends StatelessWidget {
                   ),
                 )
               ),
-              Divider(color: Colors.grey.shade600,),
+              Divider(color: Colors.greenAccent,),
               ListTile(
                 title: TextField(
                   obscureText: true,
@@ -39,7 +39,7 @@ class Secondpage extends StatelessWidget {
                   ),
                 )
               ),
-              Divider(color: Colors.grey.shade600,),
+              Divider(color: Colors.greenAccent,),
               SizedBox(height: 20,),
               Row(
                 children: <Widget>[
@@ -50,7 +50,10 @@ class Secondpage extends StatelessWidget {
                           builder: (context) => Thirdpage()
                         ));
                       },
-                      color: Colors.cyan,
+                      shape: RoundedRectangleBorder(
+                        borderRadius:BorderRadius.circular(30.0)
+                      ),
+                      color: Colors.green,
                       child: Text('Login', style: TextStyle(color: Colors.white70, fontSize: 16.0),),
                     ),
                   ),
